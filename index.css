@@ -1,0 +1,207 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #000;
+  background-image: radial-gradient(#444 2px, transparent 2px);
+  background-size: 50px 50px; 
+  position: relative;
+  animation: moveDots 10s linear infinite;
+}
+
+@keyframes moveDots {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100px 100px; /* Adjust the end position for desired movement */
+  }
+}
+
+
+img{
+  width: 100%;
+  border-radius: 2rem;
+}
+
+nav{
+  width: 100%;
+  height: 4rem;
+  padding: 3rem 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.Heading{
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+main{
+  position: relative;
+  top: 10rem;
+  box-sizing: border-box;
+  margin: 1rem 1.5rem;
+}
+
+.main_container{
+  display: flex;
+  gap: 2rem;
+}
+
+form{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  border-radius:1rem ;
+  height: 32rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+label{
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom:.5rem ;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+input{
+  width: 90%;
+  padding: .5rem;
+  border-radius: 0.3rem;
+  outline: unset;
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+
+input:focus{
+  border:2px solid #0056b3;
+}
+
+button{
+
+  background-color: #007bff;
+  color: #fff;
+  border-radius: .3rem;
+  width: 95%;
+  cursor: pointer;
+  padding: 0.6rem 0.3rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+button:hover{
+  background: #0056b3;
+}
+
+.sec{
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+
+.videocontainer{
+  width: 55rem;
+  height: 28.9rem;
+  border-radius: .4rem;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: .4rem;
+
+}
+
+.caption{
+  position: absolute;
+  bottom: 6rem;
+  left: 30%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1.2em;
+  background-color: black;
+  z-index: 1000;
+  display: none;
+}
+
+
+@media (max-width:840px) {
+
+  
+  form{
+    width: 30rem;
+  }
+
+  .videocontainer{
+    width: 35rem;
+    padding: 1rem;
+  }
+  
+}
+
+
+@media (max-width:620px) {
+
+  .Heading {
+    width: 6rem;
+  }
+
+  label{
+    font-size: 1rem;
+    
+  }
+
+  form{
+    margin-left: 1rem;
+    width: 22rem;
+  }
+
+  .videocontainer{
+    margin-left: 1rem;
+    width: 21rem;
+    padding: 0.5rem;
+  }
+
+  .caption{
+    bottom: 4rem;
+    font-size: 0.8rem;
+    left: 50%;
+   
+  }
+  
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaptionCaster</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="Heading"><img src="Designer(4).jpeg"></div>
+      </nav>
+      <main>
+        <div class="main_container">
+        <div class="main_1">
+          <form>
+            <label for="videourl">Video Url</label>
+            <input type="text" placeholder="Enter Video Url" id="videourl" >
+            <div class="Caption_details">
+              <label for="captionText">Caption</label>
+              <input type="text" placeholder="Enter Caption" id="captionText" >
+              <label for="start">Start Time<span class="sec">(in second)</span></label>
+              <input type="text" placeholder="Enter Start Time" id="start" >
+              <label for="end">End Time<span class="sec">(in second)</span></label>
+              <input type="text" placeholder="Enter End Time" id="end" >
+            </div>
+            <div class="addmorecaption">
+            <button type="submit">Load Video</button>
+          </form>
+        </div>
+        <div class="main_2">
+          <div class="videocontainer">
+            <video controls ></video>
+            <div class="caption">Caption</div>
+          </div>
+        </div>
+        <div>
+      </main>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
