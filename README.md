@@ -1,7 +1,6 @@
 # CaptionCaster
 
-CaptionCaster is a web application that allows users to load videos, add captions, and specify start and end times for those captions. It's especially useful for adding captions to videos for accessibility purposes or for creating educational content with synchronized captions.
-
+CaptionCaster is a web application that allows users to load videos, add captions, and specify start and end times for those captions. 
 ## Features
 
 - Load video from URL
